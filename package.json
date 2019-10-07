@@ -1,0 +1,28 @@
+{
+  "name": "tsboilerplate",
+  "version": "1.0.0",
+  "description": "tsboilerplate",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/concise/tsboilerplate.git"
+  },
+  "engines": {
+    "node": "^10.0.0"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "gts check && gts clean && tsc -p .",
+    "fix": "gts fix"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.0",
+    "gts": "1.1.0",
+    "typescript": "~3.6.0"
+  },
+  "dependencies": {}
+}
